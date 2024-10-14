@@ -1,0 +1,231 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: 2s;
+    
+}
+.navbar:hover{
+  background-color: blue;
+  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+    
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+   
+}
+
+/* Hero Section */
+.hero {
+    
+    height: 90vh;
+    color: deeppink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+} 
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.cta-btn:hover {
+    background-color: blue;
+}
+
+/* Main Content */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+   .hero h1 {
+        font-size: 2rem;
+    }
+
+       .cta-btn {
+        padding: 0.5rem 1.2rem;
+    }
+  
+       @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .animation {
+            font-size: 24px;
+            font-weight: bold;
+            color: deeppink;
+            animation: blink 3s infinite;
+        }
+}
+       .logo {
+            display: inline-block;
+        }
+
+       .logo span {
+            display: inline-block;
+            font-weight: bold;
+            animation: wave 2s infinite;
+        }
+
+        .logo span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .logo span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .logo span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .logo span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .logo span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        
+        .logo span:nth-child(6){
+          animation-delay: 0.5s;
+        }
+        .logo span:nth-child(7){
+          animation-delay: 0.6s;
+        }
+        .logo span:nth-child(8){
+          animation-delay: 0.7s;
+        }
+        .logo span:nth-child(9){
+          animation-delay: 0.8s;
+        }
+         .logo span:nth-child(10){
+          animation-delay: 0.9s;
+        }
+        .logo span:nth-child(11){
+          animation-delay: 0.8s;
+        }
+        .logo span:nth-child(12){
+          animation-delay: 0.9s;
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .red{
+          color: indianred;
+        }
+        .green{
+          color: green;
+        }
+          @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .redo {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            animation: blink 4s infinite;
+        }
+        .deeppink{
+         font-size: 20px;
+            font-weight: bold;
+            color:white;
+            animation: blink 4s infinite; 
+        }
+         
+        
